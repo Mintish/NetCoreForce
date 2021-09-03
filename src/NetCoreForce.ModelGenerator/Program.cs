@@ -477,7 +477,7 @@ namespace NetCoreForce.ModelGenerator
             gen.AppendLine($"\t///<para>SObject Name: {data.Name}</para>");
             gen.AppendLine($"\t///<para>Custom Object: {data.Custom.ToString()}</para>");
             gen.AppendLine("\t///</summary>");
-            gen.AppendLine($"\tpublic class {className} : SObject");
+            gen.AppendLine($"\tpublic partial class {className} : SObject");
             gen.AppendLine("\t{");
 
             gen.AppendLine("\t\t[JsonIgnore]");
